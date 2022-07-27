@@ -1,6 +1,15 @@
 $primary:#AA0601;
 $secondary:#000000;
 $success:#FBF2F2;
+$danger:#650300;
+
+$fz-primary:16px;
+$lh-primary:1;
+
+body {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Noto Sans TC", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
 
 *,*::before,*::after{
     box-sizing: border-box;
@@ -37,7 +46,7 @@ img{
 .header-menu{
     display: flex;
     li{
-        padding: 25px 32px;
+        padding: 25px 0 25px 64px;
         a{
             text-decoration: none;
             color: #fff;
@@ -56,4 +65,88 @@ img{
     background-position: center;
     padding: 296px 0;
     text-align: right;
+}
+h1{
+    font-size: $fz-primary*4;
+    color: $danger;
+    line-height: $lh-primary*1.5;
+    font-weight: 700;
+}
+h3{
+    font-size: $fz-primary*2.25;
+    color: $danger;
+    line-height: $lh-primary;
+    font-weight: 400;
+}
+.btn{
+    margin-top: 4px;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #fff;
+    background: $primary;
+    &:hover{
+        background: $secondary;
+    }
+}
+.footer{
+    background: $primary;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        .footer-menu{
+            display: flex;
+            margin-bottom: 24px;
+            li{
+                margin-right: 48px;
+                margin: 12px 48px 12px 0;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size:$fz-primary;
+                    line-height: $lh-primary;
+                    font-weight: 400;
+                }
+            }
+        }
+        .footer-contact{
+            li{
+                margin-top: 8px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size:$fz-primary*2.25;
+                    line-height: $lh-primary;
+                    margin-left: 20px;
+                }
+            }            
+        }
+        .footer-rightside{
+            display: flex;
+            li{
+                margin: 0 16px;
+                img{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size:$fz-primary;
+        .footer-lawlink a{
+            text-decoration: none;
+            color: #fff;
+            font-size:$fz-primary*0.875;
+            line-height: $lh-primary;
+            margin-left: 48px;
+        }
+    }
 }
