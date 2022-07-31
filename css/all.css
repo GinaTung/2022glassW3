@@ -471,6 +471,7 @@ h3 {
     font-size: #AA0601;
     line-height: 1.5;
     margin: 0;
+    padding-top: 16px;
   }
   .footer .footer-bottom P {
     margin-bottom: 8px;
