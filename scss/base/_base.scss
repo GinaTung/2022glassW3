@@ -37,7 +37,7 @@ img{
 }
 .logo a{
     display: block;
-    background: url('/img/logo-white.png');
+    background: url('../img/logo-white.png');
     text-indent: 101%;
     background-repeat: no-repeat;
     width: 80px;
@@ -133,7 +133,7 @@ img{
 }
 @media(max-width:767px){
     .banner{
-        background-image: url('/img/home-header-sm.png');
+        background-image: url('../img/home-header-sm.png');
     }
 }
 h1{
