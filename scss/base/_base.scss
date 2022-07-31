@@ -99,8 +99,27 @@ img{
         }
     }
 }
+@media(max-width:375px){
+    .header{
+        .header-content{
+            display: none;
+        }
+        .header-content-sm{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+@media(min-width:375px){
+    .header{
+        .header-content-sm{
+            display: none;
+        }
+    }
+}
 .banner{
-    background-image: url('/img/home-header.png');
+    background-image: url('../img/home-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
